@@ -1,0 +1,22 @@
+name: user ci
+on:
+  workflow_dispatch
+jobs:
+  Build:
+    runs-on: self-hosted
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - run: echo build
+  Test:
+    runs-on: self-hosted
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - run: echo Test
+  Deploy:
+    runs-on: self-hosted
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - run: echo Deploy     
